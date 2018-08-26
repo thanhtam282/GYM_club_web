@@ -1,0 +1,166 @@
+=hover_spec($topbot: 100px, $leftright: 100px)
+	margin-top: -$topbot 
+	margin-bottom: -$topbot 
+	margin-left: -$leftright
+	margin-right: -$leftright
+	padding: $topbot $leftright
+	border-width: $topbot $leftright
+
+
+
+// .home-new
+// 	.item
+// 		a
+// 			text-decoration: none
+// 			figure
+// 				.blockimg
+// 					border-radius: 10px
+// 					overflow: hidden
+// 					position: relative
+// 					&:before
+// 						content: ''
+// 						display: block
+// 						height: 0
+// 						width: 0
+// 						position: absolute
+// 						border-color: rgba(0,0,0,0.52)
+// 						border-style: solid
+// 						//top:  100%
+// 						//bottom:  100%
+// 						+media-breakpoint-down(xl)
+// 							+hover_spec(105px, 175px)
+// 						+media-breakpoint-down(lg)
+// 							+hover_spec(87px, 145px)
+// 						+media-breakpoint-down(md)
+// 							+hover_spec(63px, 105px)
+// 						+media-breakpoint-down(sm)
+// 							border: 0px
+
+						
+// 					i
+// 						position: absolute
+// 						left: 50%
+// 						top: 50%
+// 						font-size: 3rem
+// 						color: #fff
+// 						transform: translateX(-50%) translateY(-50%)
+// 						opacity: 0
+// 						transition: .5s all ease-in-out
+// 					img
+// 						width: 100%
+// 				figcaption
+// 					h3
+// 						font-size: 1rem
+// 						font-weight: 500
+// 						line-height: 1.2rem
+// 						margin-top: .75rem
+// 						margin-bottom: 0
+// 					time
+// 						color: darken(#fff, 30%)
+// 						line-height: 1.2rem
+// 					p
+// 						line-height: 1.2rem
+// 						height: 3.6rem
+// 						overflow: hidden
+// 						margin-top: .25rem
+// 						color: darken(#fff, 35%)
+// 						font-size: .9rem
+// 			+media-breakpoint-down(sm)
+// 				figure
+// 					padding-top: 20px
+// 			&:hover,
+// 			&:active
+// 				.blockimg
+// 					&:before
+// 						margin: 0px
+// 						padding: 0px
+// 						transition: .3s all ease-in-out
+
+// 					i
+// 						opacity: 1
+// 						z-index: 9999
+// 					+media-breakpoint-down(sm)
+// 						i
+// 							opacity: 0
+// 				h3
+// 					color: #9644a2
+// 				p
+// 					color: #000
+
+.home-slider
+	background: #000
+	padding-top: 40px
+	padding-bottom: 4.29rem
+	.title
+		//padding-top: 40px
+		background: #000
+		h1
+			font-weight: 700
+			font-size: 2.14rem
+			background: #000
+			display: inline
+			z-index: 99
+			color: white
+			position: relative
+			padding: 0 1rem
+
+		&:before
+			content: ""
+			position: absolute
+			width: 100%
+			height: 1px
+			background: #fff
+			top: 50%
+			//margin-left: 2rem
+			left: 0
+			//z-index: -1
+
+
+	.owl-carousel
+		margin-top: 2.7rem
+		figure
+			margin: 0
+			img
+				opacity: 0.5
+		.item
+			&:hover
+				img
+					opacity: 1
+	.owl-nav
+		button
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			&.owl-prev
+				background: yellow
+				left: -1rem	
+				border-radius: 1px
+				height: 1.79rem
+				width: 1.79rem
+				.fa
+					//padding: .5rem
+			&.owl-next
+				background: yellow
+				right: -1rem
+				height: 1.79rem
+				width: 1.79rem
+			&:hover,
+			&:active
+				background: #fff
+
++media-breakpoint-down(sm)
+	.home-slider
+		padding-bottom: 2rem
+		.owl-nav
+			padding-top: 2.5rem
+			padding-bottom: 0
+			text-align: center
+			button
+				position: relative
+				&.owl-next
+					margin-left: .25rem
+					right: 0
+				&.owl-prev
+					left: 0
+					margin-right: .25rem
+
