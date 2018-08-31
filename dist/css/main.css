@@ -6424,6 +6424,169 @@ footer .home-form {
     footer .home-form .row .form-bot {
       max-width: 350px; } }
 
+.thanhtam-banner {
+  padding-bottom: .5rem; }
+  .thanhtam-banner .img-banner {
+    position: relative;
+    background-position: center center;
+    background-size: center;
+    background-image: url(../img/home_panel.png); }
+    .thanhtam-banner .img-banner img {
+      width: 100%;
+      display: block; }
+    .thanhtam-banner .img-banner .title {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .thanhtam-banner .img-banner .title h1 {
+        font-size: 2.5rem; }
+      .thanhtam-banner .img-banner .title p {
+        max-width: 60%;
+        padding-top: 2rem;
+        font-size: 1.2rem; }
+      .thanhtam-banner .img-banner .title a {
+        text-decoration: none; }
+        .thanhtam-banner .img-banner .title a .btn-detail {
+          padding: .7rem 3.5rem;
+          color: black;
+          font-size: 1.2rem;
+          background: #fff;
+          border: 0px; }
+          .thanhtam-banner .img-banner .title a .btn-detail:hover, .thanhtam-banner .img-banner .title a .btn-detail:active {
+            box-shadow: 0px 0px 13px 7px yellow;
+            transition: .3s all ease-in-out; }
+
+.thanhtam-shopping {
+  background: #000; }
+  .thanhtam-shopping .owl-theme {
+    position: relative; }
+    .thanhtam-shopping .owl-theme .item a {
+      background-size: cover;
+      background-position: 50% 50%;
+      background-image: url(../../img/home_panel_2.png);
+      text-decoration: none; }
+      .thanhtam-shopping .owl-theme .item a .title {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute; }
+        .thanhtam-shopping .owl-theme .item a .title h3 {
+          font-size: 3.42rem;
+          background: #000;
+          padding: 0 1rem;
+          color: white; }
+        .thanhtam-shopping .owl-theme .item a .title p {
+          padding: 0 1rem;
+          font-size: 1.29rem;
+          background: yellow;
+          color: black;
+          font-weight: 700;
+          display: inline-block; }
+      .thanhtam-shopping .owl-theme .item a:hover {
+        text-decoration: none;
+        color: white; }
+      @media (max-width: 991.98px) {
+        .thanhtam-shopping .owl-theme .item a .title h3 {
+          font-size: 1.75rem; }
+        .thanhtam-shopping .owl-theme .item a .title p {
+          font-size: inherit; } }
+    .thanhtam-shopping .owl-theme .owl-dots {
+      position: absolute;
+      left: 50%;
+      bottom: 14%;
+      transform: translateX(-50%); }
+      .thanhtam-shopping .owl-theme .owl-dots .owl-dot span {
+        background: #fff;
+        width: 1.36rem;
+        height: 0.36rem;
+        border-radius: 2px; }
+        .thanhtam-shopping .owl-theme .owl-dots .owl-dot span:hover {
+          background: #afafaf; }
+      .thanhtam-shopping .owl-theme .owl-dots .active span {
+        background: yellow; }
+
+.big-caption {
+  margin-bottom: 30px;
+  background: #000; }
+  .big-caption h2 {
+    font-weight: 700;
+    font-size: 2.14rem;
+    background: #000;
+    display: inline;
+    z-index: 99;
+    color: white;
+    position: relative;
+    padding: 0 1rem; }
+  .big-caption:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    top: 50%;
+    left: 0; }
+  @media (max-width: 767.98px) {
+    .big-caption h2 {
+      font-size: 1.5rem; } }
+
+.thanhtam-product {
+  background: #000; }
+  .thanhtam-product .item {
+    text-decoration: none; }
+    .thanhtam-product .item a figure .blockimg img {
+      width: 100%;
+      filter: grayscale(100%); }
+    .thanhtam-product .item a figure figcaption h3 {
+      padding-top: 1rem;
+      font-weight: 900;
+      font-size: 1rem;
+      color: #fff; }
+    .thanhtam-product .item a figure figcaption p {
+      font-size: 1.14rem;
+      font-weight: 700;
+      color: #afafaf; }
+    .thanhtam-product .item:hover a, .thanhtam-product .item:active a {
+      text-decoration: none; }
+      .thanhtam-product .item:hover a .blockimg img, .thanhtam-product .item:active a .blockimg img {
+        box-shadow: 0px 0px 0px 5px yellow;
+        filter: grayscale(0%);
+        transition: .5s all ease-in-out; }
+      .thanhtam-product .item:hover a figcaption h3, .thanhtam-product .item:active a figcaption h3 {
+        color: yellow; }
+      .thanhtam-product .item:hover a figcaption p, .thanhtam-product .item:active a figcaption p {
+        color: #00eaff; }
+
+.thanhtam-sale {
+  background: #000; }
+  .thanhtam-sale .img-banner {
+    position: relative; }
+    .thanhtam-sale .img-banner img {
+      width: 100%;
+      display: block;
+      box-shadow: 0px 0px 0px 5px #fff; }
+  .thanhtam-sale .title {
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, 22%); }
+    .thanhtam-sale .title .cap {
+      text-align: center; }
+      .thanhtam-sale .title .cap h3 {
+        background: #000;
+        font-size: 2.43rem;
+        color: #fff;
+        padding-bottom: 1rem; }
+      .thanhtam-sale .title .cap p {
+        font-size: 1.3rem;
+        color: #000;
+        background: #fff000;
+        display: inline-block;
+        transform: translateY(-40%);
+        padding: .5rem; }
+
 .home-slider {
   background: #000;
   padding-top: 40px;
@@ -6488,5 +6651,89 @@ footer .home-form {
         .home-slider .owl-nav button.owl-prev {
           left: 0;
           margin-right: .25rem; } }
+
+.home-new .item a {
+  text-decoration: none; }
+  .home-new .item a figure .blockimg {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; }
+    .home-new .item a figure .blockimg:before {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      position: absolute;
+      border-color: rgba(0, 0, 0, 0.52);
+      border-style: solid;
+      margin-top: -105px;
+      margin-bottom: -105px;
+      margin-left: -175px;
+      margin-right: -175px;
+      padding: 105px 175px;
+      border-width: 105px 175px; }
+      @media (max-width: 1199.98px) {
+        .home-new .item a figure .blockimg:before {
+          margin-top: -87px;
+          margin-bottom: -87px;
+          margin-left: -145px;
+          margin-right: -145px;
+          padding: 87px 145px;
+          border-width: 87px 145px; } }
+      @media (max-width: 991.98px) {
+        .home-new .item a figure .blockimg:before {
+          margin-top: -63px;
+          margin-bottom: -63px;
+          margin-left: -105px;
+          margin-right: -105px;
+          padding: 63px 105px;
+          border-width: 63px 105px; } }
+      @media (max-width: 767.98px) {
+        .home-new .item a figure .blockimg:before {
+          border: 0px; } }
+    .home-new .item a figure .blockimg i {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      font-size: 3rem;
+      color: #fff;
+      transform: translateX(-50%) translateY(-50%);
+      opacity: 0;
+      transition: .5s all ease-in-out; }
+    .home-new .item a figure .blockimg img {
+      width: 100%; }
+  .home-new .item a figure figcaption h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    margin-top: .75rem;
+    margin-bottom: 0; }
+  .home-new .item a figure figcaption time {
+    color: #b3b3b3;
+    line-height: 1.2rem; }
+  .home-new .item a figure figcaption p {
+    line-height: 1.2rem;
+    height: 3.6rem;
+    overflow: hidden;
+    margin-top: .25rem;
+    color: #a6a6a6;
+    font-size: .9rem; }
+  @media (max-width: 767.98px) {
+    .home-new .item a figure {
+      padding-top: 20px; } }
+  .home-new .item a:hover .blockimg:before, .home-new .item a:active .blockimg:before {
+    margin: 0px;
+    padding: 0px;
+    transition: .3s all ease-in-out; }
+  .home-new .item a:hover .blockimg i, .home-new .item a:active .blockimg i {
+    opacity: 1;
+    z-index: 9999; }
+  @media (max-width: 767.98px) {
+    .home-new .item a:hover .blockimg i, .home-new .item a:active .blockimg i {
+      opacity: 0; } }
+  .home-new .item a:hover h3, .home-new .item a:active h3 {
+    color: #9644a2; }
+  .home-new .item a:hover p, .home-new .item a:active p {
+    color: #000; }
 
 /*# sourceMappingURL=main.css.map */
