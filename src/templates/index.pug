@@ -10,7 +10,7 @@ block body
 
 	section.thanhtam-banner
 		.img-banner
-			img(src="../img/home_panel.png", alt="")
+			//-img(src="../img/home_panel.png", alt="")
 			.title
 				.container
 					.row
@@ -23,6 +23,8 @@ block body
 							
 							a(href="#")
 									btn.btn-detail(type='button') XEM CHI TIẾT
+									//-btn.btn-click(type='button') CLICK NOW
+									//- btn.btn-detail.animated.infinite.bounceInLeft(type='button') XEM CHI TIẾT
 	
 	section.thanhtam-shopping
 		.container
@@ -31,21 +33,21 @@ block body
 					.item
 						a(href="#")
 							figure
-								img(src="../img/home_panel_2.png", alt="")
+								//- img(src="../img/home_panel_2.png", alt="")
 							.title
 								h3 USA'S HOTTEST JEANS
 								p SHOPPING NOW
 					.item
 						a(href="#")
 							figure
-								img(src="../img/home_panel_2.png", alt="")
+								//- img(src="../img/home_panel_2.png", alt="")
 							.title
 								h3 USA'S HOTTEST JEANS
 								p SHOPPING NOW
 					.item
 						a(href="#")
 							figure
-								img(src="../img/home_panel_2.png", alt="")
+								//- img(src="../img/home_panel_2.png", alt="")
 							.title
 								h3 USA'S HOTTEST JEANS
 								p SHOPPING NOW
@@ -57,127 +59,80 @@ block body
 					.title
 						h2 FULLSTACK VIETNAM
 			.row
-				.col-6.item
-					a(href="")
-						figure
-							.blockimg
-								img.img-fluid(src="./img/home_product_1.png", alt="")
-							figcaption
-								h3 TRUNG TÂM ĐÀO TẠO CHUYÊN NGHIỆP
-								p $96.69
-				.col-6.item
-					a(href="")
-						figure
-							.blockimg
-								img.img-fluid(src="./img/home_product_2.png", alt="")
-							figcaption
-								h3 TRUNG TÂM ĐÀO TẠO CHUYÊN NGHIỆP
-								p $96.69
-				.col-6.item
-					a(href="")
-						figure
-							.blockimg
-								img.img-fluid(src="./img/home_product_3.png", alt="")
-							figcaption
-								h3 TRUNG TÂM ĐÀO TẠO CHUYÊN NGHIỆP
-								p $96.69
-				.col-6.item
-					a(href="")
-						figure
-							.blockimg
-								img.img-fluid(src="./img/home_product_4.png", alt="")
-							figcaption
-								h3 TRUNG TÂM ĐÀO TẠO CHUYÊN NGHIỆP
-								p $96.69
+				- for (x=1;x<5;x++)
+					.col-6.col-lg-3.item.mb-4
+						a(href="")
+							figure
+								.blockimg
+									img.img-fluid(src="./img/home_product_"+x+".png", alt="")
+								figcaption
+									h3 TRUNG TÂM ĐÀO TẠO CHUYÊN NGHIỆP
+									p $96.69
 
 	section.thanhtam-sale
 			.container
 				.row
-					.col
+					.col.mb-3
 						.img-banner
-							img.img-fluid(src="./img/home_panel_3.png", alt="")
-						.title
-							a(href="")
-								.cap
-									h3 HẠNH PHÚC PHÍA SAU
-									p USA'S HOTTEST JEANS
-								.sale
-									span Sale
-									span 20%
+							.cap
+								h3 HẠNH PHÚC PHÍA SAU
+								p USA'S HOTTEST JEANS
+							.sale
+								span.p Sale
+								span.price 20%
 
-	//- section.home-new
-	//- 	.container
-	//- 		.row
-	//- 			.col-md-4.item
-	//- 				a(href="#")
-	//- 					figure
-	//- 						.blockimg
-	//- 							i.fa.fa-eye
-	//- 							img(src="./img/home_photo_1.png", alt="")
-	//- 						figcaption
-	//- 							h3 sdf asdfasdf asdf
-	//- 							time 20/06/2018
-	//- 							p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id natus quae dolorem culpa deserunt repellat accusamus. Necessitatibus nulla totam beatae neque assumenda? Dignissimos velit facilis tempora officiis expedita exercitationem esse?
-				.col-md-4.item
-					a(href="")
-						figure
-							.blockimg
-								i.fa.fa-eye
-								img(src="./img/home_photo_2.png", alt="")
-							figcaption
-								h3 sdf asdfasdf asdf
-								time 20/06/2018
-								p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id natus quae dolorem culpa deserunt repellat accusamus. Necessitatibus nulla totam beatae neque assumenda? Dignissimos velit facilis tempora officiis expedita exercitationem esse?
-				.col-md-4.item
-					a(href="")
-						figure
-							.blockimg
-								i.fa.fa-eye
-								img(src="./img/home_photo_3.png", alt="")
-							figcaption
-								h3 sdf asdfasdf asdf
-								time 20/06/2018
-								p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id natus quae dolorem culpa deserunt repellat accusamus. Necessitatibus nulla totam beatae neque assumenda? Dignissimos velit facilis tempora officiis expedita exercitationem esse?
+	section.thanhtam-quote
+		.container
+			.row
+				.col-lg-5.mt-5.mb-3.text-center
+					figure
+						img(src="./img/home_panel_4.png", alt="")
+				.col-lg-7.mt-5.mb-3.text-center
+					.title
+						h4 HẠNH PHÚC PHÍA SAU
+						p Want the most stylish designs in metrosexual and gay apparel? Looking for the sexiest gay outfits and pride outfits? Differio has the trendiest gay pride apparel from gay pride clothing to lgbt clothing. Shop our gay menswear collection for the hottest gay pride outfits in gay clothing for men.
 
-	//- section.home-slider
-	//- 	.container
-	//- 		.row
-	//- 			.col.text-center
-	//- 				.title
-	//- 					h1 FULLSTACK VIETNAM
-	//- 		.row
-	//- 			.col.owl-carousel
-	//- 				.item
-	//- 					a(href="#")
-	//- 						figure
-	//- 							img(src="./img/home_slider_1.png", alt="")
-	//- 				.item
-	//- 					a(href="#")
-	//- 						figure
-	//- 							img(src="./img/home_slider_2.png", alt="")
-	//- 				.item
-	//- 					a(href="#")
-	//- 						figure
-	//- 							img(src="./img/home_slider_3.png", alt="")
-	//- 				.item
-	//- 					a(href="#")
-	//- 						figure
-	//- 							img(src="./img/home_slider_4.png", alt="")
-	//- 				.item
-	//- 					a(href="#")
-	//- 						figure
-	//- 							img(src="./img/home_slider_5.png", alt="")
-	//- 				.item
-	//- 					a(href="#")
-	//- 						figure
-	//- 							img(src="./img/home_slider_6.png", alt="")
-	//- 				.item
-	//- 					a(href="#")
-	//- 						figure
-	//- 							img(src="./img/home_slider_1.png", alt="")
-	//- 				.item
-	//- 					a(href="#")
-	//- 						figure
-	//- 							img(src="./img/home_slider_2.png", alt="")
+
+
+	section.home-slider
+		.container
+			.row
+				.col.text-center
+					.title
+						h1 FULLSTACK VIETNAM
+			.row
+				.col.owl-carousel
+					.item
+						a(href="#")
+							figure
+								img(src="./img/home_slider_1.png", alt="")
+					.item
+						a(href="#")
+							figure
+								img(src="./img/home_slider_2.png", alt="")
+					.item
+						a(href="#")
+							figure
+								img(src="./img/home_slider_3.png", alt="")
+					.item
+						a(href="#")
+							figure
+								img(src="./img/home_slider_4.png", alt="")
+					.item
+						a(href="#")
+							figure
+								img(src="./img/home_slider_5.png", alt="")
+					.item
+						a(href="#")
+							figure
+								img(src="./img/home_slider_6.png", alt="")
+					.item
+						a(href="#")
+							figure
+								img(src="./img/home_slider_1.png", alt="")
+					.item
+						a(href="#")
+							figure
+								img(src="./img/home_slider_2.png", alt="")
 					
 

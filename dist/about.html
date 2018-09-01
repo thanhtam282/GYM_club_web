@@ -83,8 +83,26 @@
     <meta name="msapplication-config" content="./favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body class="about-page" id="top-page"><!-- ////////////// Header ////////////// -->
-    <!--include header--><!-- ////////////// End Header ////////////// -->
+  <body class="about-page" id="top-page"><!-- ////////////// Header ////////////// --><!-- ////////////// HEADER ////////////// -->
+    <header class="bg-light">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="#"> <img src="./img/logo.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+          <div class="collapse navbar-collapse" id="fullStackMenu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Trang chủ</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">Về chúng tôi</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="dropdownFS" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gian hàng</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownFS"><a class="dropdown-item" href="#">Nam</a><a class="dropdown-item" href="#">Nữ</a></div>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+              <input class="form-control" type="text" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header><!-- ////////////// HEADER ////////////// --><!-- ////////////// End Header ////////////// -->
 <!-- ////////////// Begin Main ////////////// -->
     <main>
       <section class="about">
@@ -97,8 +115,62 @@
         </div>
       </section>
     </main><!-- ////////////// End Main ////////////// -->
-<!-- ////////////// Footer ////////////// -->
-    <!--include footer--><!-- ////////////// End Footer ////////////// -->
+<!-- ////////////// Footer ////////////// --><!-- ////////////// FOOTER ////////////// -->
+    <footer>
+      <section class="thanhtam-linkfooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-center text-sm-left mb-sm-4 mb-xs-3 mt-4">
+              <h3>FULLSTACK VIETNAM</h3>
+              <p>Mobile: (+84) 969689893<br>Email: admin@fullstackvietnam.com<br>Địa chỉ: 28 đường số 2 – CITY LAND – Phường 7 – Gò Vấp – HCM</p>
+            </div>
+            <div class="col-sm text-center text-sm-left mb-sm-4 mb-xs-3 mt-sm-4 mt-xs-0">
+              <h3>LINKS</h3>
+              <div class="row">
+                <div class="col-sm text-center text-sm-left">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Khóa học FrontEnd Master</a></li>
+                    <li><a href="#">Khóa học FullStack Developer</a></li>
+                    <li><a href="#">Khóa học Design chuyên nghiệp</a></li>
+                    <li><a href="#">Lịch khai giảng</a></li>
+                    <li><a href="#">Đăng ký Khóa học</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm text-center text-sm-left mb-sm-4 mb-xs-3">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Khóa học FrontEnd Master</a></li>
+                    <li><a href="#">Khóa học FullStack Developer</a></li>
+                    <li><a href="#">Khóa học Design chuyên nghiệp</a></li>
+                    <li><a href="#">Lịch khai giảng</a></li>
+                    <li><a href="#">Đăng ký Khóa học</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-auto text-center mb-sm-4 mb-xs-3">
+                  <ul class="list-inline icon"><a href="#">
+                      <li class="list-inline-item"><i class="fa fa-twitter"></i></li></a><a href="#">
+                      <li class="list-inline-item"><i class="fa fa-facebook"></i></li></a></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-form">
+        <div class="container">
+          <div class="row align-item-center">
+            <div class="col-md-6 text-center text-md-left">
+              <h4>Copyright 2018 by FullStack Vietnam</h4>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+              <div class="form-bot mt-3 mt-sm-0 align-self-center">
+                <input type="text" name="" placeholder="Email của bạn">
+                <button type="button">GỬI</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer><!-- ////////////// End Footer ////////////// -->
 <!-- ////////////// Javascript Include ////////////// -->
     <!-- inject:js -->
     <!-- endinject -->

@@ -9,13 +9,16 @@
 .thanhtam-banner
 	padding-bottom: .5rem
 	.img-banner
+		background: #000
 		position: relative
 		background-position: center center
-		background-size: center
 		background-image: url(../img/home_panel.png)
-		img
-			width: 100%
-			display: block
+		background-repeat: no-repeat
+		background-size: cover
+		min-height: 500px
+		// img
+		width: 100%
+		// 	display: block
 		.title
 			height: 100%
 			width: 100%
@@ -39,8 +42,21 @@
 					border: 0px
 					&:hover,
 					&:active
-						box-shadow: 0px 0px 13px 7px yellow
-						transition: .3s all ease-in-out
+					// 	&:after
+					// 		opacity: 1
+					// 	// box-shadow: 0px 0px 13px 7px yellow
+					// 	// transition: .3s all ease-in-out
+					// &:after
+					// 	content: "CLICK NOW"
+					// 	position: absolute
+					// 	width: 100%
+					// 	padding: .7rem 3.5rem
+					// 	color: black
+					// 	font-size: 1.2rem
+					// 	background: #fff
+					// 	border: 0px
+					// 	opacity: 0
+					// 	transition: .5s all ease-in-out
 				
 
 .thanhtam-shopping
@@ -49,11 +65,17 @@
 		position: relative
 		.item
 			a
-				background-size: cover
-				background-position: 50% 50%
-				background-image: url(../../img/home_panel_2.png)
-				text-decoration: none
+				// background-size: cover
+				// background-position: 50% 50%
+				// background-image: url(../../img/home_panel_2.png)
+				// text-decoration: none
+				// position: relative
 				figure
+					background-position: center center
+					background-image: url(../img/home_panel_2.png)
+					background-size: cover
+					min-height: 150px
+					background-repeat: no-repeat
 				.title
 					top: 50%
 					transform: translateY(-50%)
@@ -127,14 +149,24 @@
 
 .thanhtam-product
 	background: #000
-	.item
+	.item	
 		text-decoration: none
 		a
 			figure
 				.blockimg
+					position: relative
 					img
 						width: 100%
 						filter: grayscale(100%)
+						transition: .5s all ease-in-out
+					&:before
+						transition: .5s all ease-in-out
+						position: absolute
+						content: ""
+						display: block
+						height: 100%
+						width: 100%
+						z-index: 1
 				figcaption
 					h3
 						padding-top: 1rem
@@ -153,9 +185,9 @@
 				text-decoration: none
 				.blockimg
 					img
-						box-shadow: 0px 0px 0px 5px yellow
 						filter: grayscale(0%)
-						transition: .5s all ease-in-out
+					&:before
+						box-shadow: 0px 0px 0px 5px yellow inset
 				figcaption
 					h3
 						color: yellow
@@ -165,29 +197,111 @@
 .thanhtam-sale
 	background: #000
 	.img-banner
+		box-shadow: 0px 0px 0px 5px #fff
 		position: relative
-		img
-			width: 100%
-			display: block
-			box-shadow: 0px 0px 0px 5px #fff
-	.title
-		position: absolute
-		top: 50%
-		transform: translate(50%, 22%)
+		background-position: center center
+		background-image: url(../img/home_panel_3.png)
+		background-size: cover
+		min-height: 500px
+		background-repeat: no-repeat
+		transition: .3s all ease-in-out
 		.cap
+			position: absolute
+			top: 50%
+			transform: translateX(-50%)
+			left: 50%
 			text-align: center
+			margin-bottom: 4.64rem
 			h3
+				font-weight: 700
 				background: #000
-				font-size: 2.43rem
+				font-size: 1.5rem
 				color: #fff
-				padding-bottom: 1rem
+				padding: .65rem 1rem 1.45rem 1rem
+				white-space: nowrap
 			p
-				font-size: 1.3rem
+				font-weight: 700
+				font-size: 1rem
 				color: #000
 				background: #fff000
 				display: inline-block
-				transform: translateY(-40%)
-				padding: .5rem
+				transform: translateY(-60%)
+				padding: .5rem 1rem
+		.sale
+			position: absolute
+			right: 2%
+			margin-top: 1rem
+			background: #000
+			height: 4.5rem
+			border-radius: 50%
+			width: 4.5rem
+			display: flex
+			flex-direction: column
+			justify-content: center
+			text-align: center
+			align-items: center
+			span
+				font-weight: 900
+				font-size: 1rem
+				color: #fff000
+		&:hover,
+		&:active
+			box-shadow: 0px 0px 0px 5px #fff000
+			
+	+media-breakpoint-up(md)
+		.img-banner
+			.cap
+				h3 
+					font-size: 3.47rem
+					white-space: nowrap
+				p
+					transform: translateY(-40%)
+					padding: 1rem 1.5rem
+					font-size: 1.3rem
+	+media-breakpoint-down(sm)
+		.img-banner
+			transition: none
+			&:hover, &:active
+				box-shadow: 0px 0px 0px 5px #fff
+
+.thanhtam-quote
+	background: #000
+	color: #fff
+	figure
+		overflow: hidden
+		box-shadow: 0px 0px 0px 3px #fff000
+		img
+			box-shadow: 0px 0px 0px 3px #fff
+			width: 100%
+			transition: .5s all ease-in-out
+			&:hover,
+			&:active
+				// transform: scale(1.2)
+	+media-breakpoint-down(md)
+		figure
+			height: 100%
+			img
+				height: 100%
+				width: 100%
+	.title
+		h4
+			font-weight: 700
+			background: #252525
+			box-shadow: 0px 0px 0px 3px #fff000
+			font-size: 1.71rem
+			position: absolute
+			right: 50%
+			transform: translate(50%, -50%)
+			z-index: 999
+			padding: 1rem
+			white-space: nowrap
+		p
+			font-weight: 400
+			box-shadow: 0px 0px 0px 3px #fff000
+			font-size: 1.71rem
+			padding: 4rem 2rem 2rem
+			position: relative
+			margin-bottom: 0
 
 
 .home-slider
@@ -250,6 +364,7 @@
 			&:hover,
 			&:active
 				background: #fff
+				border: 0 0 0 0 red
 
 +media-breakpoint-down(sm)
 	.home-slider
@@ -266,82 +381,3 @@
 				&.owl-prev
 					left: 0
 					margin-right: .25rem
-
-.home-new
-	.item
-		a
-			text-decoration: none
-			figure
-				.blockimg
-					border-radius: 10px
-					overflow: hidden
-					position: relative
-					&:before
-						content: ''
-						display: block
-						height: 0
-						width: 0
-						position: absolute
-						border-color: rgba(0,0,0,0.52)
-						border-style: solid
-						//top:  100%
-						//bottom:  100%
-						+media-breakpoint-down(xl)
-							+hover_spec(105px, 175px)
-						+media-breakpoint-down(lg)
-							+hover_spec(87px, 145px)
-						+media-breakpoint-down(md)
-							+hover_spec(63px, 105px)
-						+media-breakpoint-down(sm)
-							border: 0px
-
-						
-					i
-						position: absolute
-						left: 50%
-						top: 50%
-						font-size: 3rem
-						color: #fff
-						transform: translateX(-50%) translateY(-50%)
-						opacity: 0
-						transition: .5s all ease-in-out
-					img
-						width: 100%
-				figcaption
-					h3
-						font-size: 1rem
-						font-weight: 500
-						line-height: 1.2rem
-						margin-top: .75rem
-						margin-bottom: 0
-					time
-						color: darken(#fff, 30%)
-						line-height: 1.2rem
-					p
-						line-height: 1.2rem
-						height: 3.6rem
-						overflow: hidden
-						margin-top: .25rem
-						color: darken(#fff, 35%)
-						font-size: .9rem
-			+media-breakpoint-down(sm)
-				figure
-					padding-top: 20px
-			&:hover,
-			&:active
-				.blockimg
-					&:before
-						margin: 0px
-						padding: 0px
-						transition: .3s all ease-in-out
-
-					i
-						opacity: 1
-						z-index: 9999
-					+media-breakpoint-down(sm)
-						i
-							opacity: 0
-				h3
-					color: #9644a2
-				p
-					color: #000

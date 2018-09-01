@@ -6334,106 +6334,71 @@ header .navbar-brand img {
   header .navbar-brand img {
     max-height: 2rem; } }
 
-footer .home-footer {
+footer .thanhtam-linkfooter {
   background: #373737;
-  padding-top: 3.14rem;
-  padding-bottom: 3.57rem; }
-  footer .home-footer h3 {
-    color: yellow;
-    font-weight: 900;
-    font-size: 1.14rem;
-    padding-bottom: .5rem; }
-  footer .home-footer ul {
-    font-size: 1.14rem;
-    padding-left: 0; }
-    footer .home-footer ul li {
-      list-style: none; }
-      footer .home-footer ul li p {
-        color: #afafaf;
-        margin-bottom: 0; }
-      footer .home-footer ul li a {
-        color: #afafaf; }
-        footer .home-footer ul li a:hover, footer .home-footer ul li a:active {
-          text-decoration: none;
-          color: white; }
-  footer .home-footer .icon {
-    padding-top: 3rem;
-    text-align: center; }
-    footer .home-footer .icon a {
-      text-decoration: none;
-      color: black; }
-      footer .home-footer .icon a li {
-        width: 2.79rem;
-        height: 2.79rem;
-        line-height: 2.79rem;
-        margin: 0 .36rem;
-        background: #afafaf;
-        border-radius: 50%; }
-        footer .home-footer .icon a li:hover {
-          background: yellow; }
-
-@media (max-width: 767.98px) {
-  footer .home-footer {
-    text-align: center;
-    padding-bottom: 2rem; }
-    footer .home-footer .icon {
-      padding-top: 1rem; } }
+  color: #afafaf; }
+  footer .thanhtam-linkfooter h3 {
+    color: yellow; }
+  footer .thanhtam-linkfooter ul li a {
+    text-decoration: none;
+    color: #afafaf; }
+    footer .thanhtam-linkfooter ul li a:hover, footer .thanhtam-linkfooter ul li a:active {
+      color: white; }
+  footer .thanhtam-linkfooter .icon a {
+    text-decoration: none;
+    color: black; }
+    footer .thanhtam-linkfooter .icon a li {
+      width: 2.79rem;
+      height: 2.79rem;
+      font-size: 1.2rem;
+      line-height: 2.79rem;
+      margin: 0 .26rem;
+      background: #afafaf;
+      border-radius: 50%; }
+      footer .thanhtam-linkfooter .icon a li:hover {
+        background: yellow; }
+  @media (max-width: 767.98px) {
+    footer .thanhtam-linkfooter .icon a li:hover {
+      background: #afafaf; } }
 
 footer .home-form {
-  background: yellow; }
-  footer .home-form .row {
-    display: flex;
-    justify-content: space-between;
-    padding: 2.71rem 0;
-    margin: 0; }
-    footer .home-form .row h4 {
-      font-size: 1rem;
-      color: black;
-      width: 100%;
-      margin-bottom: 0; }
-    footer .home-form .row .form-bot {
+  background: #fff000;
+  padding: 1rem 0;
+  color: #000; }
+  footer .home-form .form-bot {
+    background: #000;
+    display: inline-block;
+    padding: .3rem; }
+    footer .home-form .form-bot input {
       background: #000;
-      position: relative; }
-      footer .home-form .row .form-bot .form-group {
-        margin-bottom: 0;
-        max-width: 350px; }
-        footer .home-form .row .form-bot .form-group input {
-          font-style: italic;
-          padding: 1.6rem;
-          background: #0000;
-          border: #0000;
-          color: #afafaf;
-          border: none; }
-        footer .home-form .row .form-bot .form-group:hover, footer .home-form .row .form-bot .form-group:active, footer .home-form .row .form-bot .form-group:focus {
-          border: none; }
-      footer .home-form .row .form-bot button {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        border: none;
-        margin-right: -1.4rem;
-        padding: 0.5rem 1.64rem;
-        background: #fff; }
-        footer .home-form .row .form-bot button a {
-          color: black;
-          font-size: 1.16rem; }
+      padding: 0 .5rem;
+      color: #fff;
+      border: none;
+      font-size: 1.2rem; }
+    footer .home-form .form-bot button {
+      font-weight: bold;
+      font-size: 1rem;
+      line-height: 2rem;
+      background: #fff;
+      border: none;
+      padding: 0 1rem; }
+      footer .home-form .form-bot button:hover, footer .home-form .form-bot button:active {
+        background: yellow; }
   @media (max-width: 767.98px) {
-    footer .home-form .row h4 {
-      padding-bottom: 1rem; }
-    footer .home-form .row .form-bot {
-      max-width: 350px; } }
+    footer .home-form .form-bot button:hover, footer .home-form .form-bot button:active {
+      background: #fff; } }
 
 .thanhtam-banner {
   padding-bottom: .5rem; }
   .thanhtam-banner .img-banner {
+    background: #000;
     position: relative;
     background-position: center center;
-    background-size: center;
-    background-image: url(../img/home_panel.png); }
-    .thanhtam-banner .img-banner img {
-      width: 100%;
-      display: block; }
+    background-image: url(../img/home_panel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    width: 100%; }
     .thanhtam-banner .img-banner .title {
       height: 100%;
       width: 100%;
@@ -6457,43 +6422,41 @@ footer .home-form {
           font-size: 1.2rem;
           background: #fff;
           border: 0px; }
-          .thanhtam-banner .img-banner .title a .btn-detail:hover, .thanhtam-banner .img-banner .title a .btn-detail:active {
-            box-shadow: 0px 0px 13px 7px yellow;
-            transition: .3s all ease-in-out; }
 
 .thanhtam-shopping {
   background: #000; }
   .thanhtam-shopping .owl-theme {
     position: relative; }
-    .thanhtam-shopping .owl-theme .item a {
+    .thanhtam-shopping .owl-theme .item a figure {
+      background-position: center center;
+      background-image: url(../img/home_panel_2.png);
       background-size: cover;
-      background-position: 50% 50%;
-      background-image: url(../../img/home_panel_2.png);
-      text-decoration: none; }
-      .thanhtam-shopping .owl-theme .item a .title {
-        top: 50%;
-        transform: translateY(-50%);
-        position: absolute; }
-        .thanhtam-shopping .owl-theme .item a .title h3 {
-          font-size: 3.42rem;
-          background: #000;
-          padding: 0 1rem;
-          color: white; }
-        .thanhtam-shopping .owl-theme .item a .title p {
-          padding: 0 1rem;
-          font-size: 1.29rem;
-          background: yellow;
-          color: black;
-          font-weight: 700;
-          display: inline-block; }
-      .thanhtam-shopping .owl-theme .item a:hover {
-        text-decoration: none;
+      min-height: 150px;
+      background-repeat: no-repeat; }
+    .thanhtam-shopping .owl-theme .item a .title {
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute; }
+      .thanhtam-shopping .owl-theme .item a .title h3 {
+        font-size: 3.42rem;
+        background: #000;
+        padding: 0 1rem;
         color: white; }
-      @media (max-width: 991.98px) {
-        .thanhtam-shopping .owl-theme .item a .title h3 {
-          font-size: 1.75rem; }
-        .thanhtam-shopping .owl-theme .item a .title p {
-          font-size: inherit; } }
+      .thanhtam-shopping .owl-theme .item a .title p {
+        padding: 0 1rem;
+        font-size: 1.29rem;
+        background: yellow;
+        color: black;
+        font-weight: 700;
+        display: inline-block; }
+    .thanhtam-shopping .owl-theme .item a:hover {
+      text-decoration: none;
+      color: white; }
+    @media (max-width: 991.98px) {
+      .thanhtam-shopping .owl-theme .item a .title h3 {
+        font-size: 1.75rem; }
+      .thanhtam-shopping .owl-theme .item a .title p {
+        font-size: inherit; } }
     .thanhtam-shopping .owl-theme .owl-dots {
       position: absolute;
       left: 50%;
@@ -6537,9 +6500,20 @@ footer .home-form {
   background: #000; }
   .thanhtam-product .item {
     text-decoration: none; }
-    .thanhtam-product .item a figure .blockimg img {
-      width: 100%;
-      filter: grayscale(100%); }
+    .thanhtam-product .item a figure .blockimg {
+      position: relative; }
+      .thanhtam-product .item a figure .blockimg img {
+        width: 100%;
+        filter: grayscale(100%);
+        transition: .5s all ease-in-out; }
+      .thanhtam-product .item a figure .blockimg:before {
+        transition: .5s all ease-in-out;
+        position: absolute;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        z-index: 1; }
     .thanhtam-product .item a figure figcaption h3 {
       padding-top: 1rem;
       font-weight: 900;
@@ -6552,9 +6526,9 @@ footer .home-form {
     .thanhtam-product .item:hover a, .thanhtam-product .item:active a {
       text-decoration: none; }
       .thanhtam-product .item:hover a .blockimg img, .thanhtam-product .item:active a .blockimg img {
-        box-shadow: 0px 0px 0px 5px yellow;
-        filter: grayscale(0%);
-        transition: .5s all ease-in-out; }
+        filter: grayscale(0%); }
+      .thanhtam-product .item:hover a .blockimg:before, .thanhtam-product .item:active a .blockimg:before {
+        box-shadow: 0px 0px 0px 5px yellow inset; }
       .thanhtam-product .item:hover a figcaption h3, .thanhtam-product .item:active a figcaption h3 {
         color: yellow; }
       .thanhtam-product .item:hover a figcaption p, .thanhtam-product .item:active a figcaption p {
@@ -6563,29 +6537,103 @@ footer .home-form {
 .thanhtam-sale {
   background: #000; }
   .thanhtam-sale .img-banner {
-    position: relative; }
-    .thanhtam-sale .img-banner img {
-      width: 100%;
-      display: block;
-      box-shadow: 0px 0px 0px 5px #fff; }
-  .thanhtam-sale .title {
-    position: absolute;
-    top: 50%;
-    transform: translate(50%, 22%); }
-    .thanhtam-sale .title .cap {
-      text-align: center; }
-      .thanhtam-sale .title .cap h3 {
+    box-shadow: 0px 0px 0px 5px #fff;
+    position: relative;
+    background-position: center center;
+    background-image: url(../img/home_panel_3.png);
+    background-size: cover;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    transition: .3s all ease-in-out; }
+    .thanhtam-sale .img-banner .cap {
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%);
+      left: 50%;
+      text-align: center;
+      margin-bottom: 4.64rem; }
+      .thanhtam-sale .img-banner .cap h3 {
+        font-weight: 700;
         background: #000;
-        font-size: 2.43rem;
+        font-size: 1.5rem;
         color: #fff;
-        padding-bottom: 1rem; }
-      .thanhtam-sale .title .cap p {
-        font-size: 1.3rem;
+        padding: .65rem 1rem 1.45rem 1rem;
+        white-space: nowrap; }
+      .thanhtam-sale .img-banner .cap p {
+        font-weight: 700;
+        font-size: 1rem;
         color: #000;
         background: #fff000;
         display: inline-block;
-        transform: translateY(-40%);
-        padding: .5rem; }
+        transform: translateY(-60%);
+        padding: .5rem 1rem; }
+    .thanhtam-sale .img-banner .sale {
+      position: absolute;
+      right: 2%;
+      margin-top: 1rem;
+      background: #000;
+      height: 4.5rem;
+      border-radius: 50%;
+      width: 4.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center; }
+      .thanhtam-sale .img-banner .sale span {
+        font-weight: 900;
+        font-size: 1rem;
+        color: #fff000; }
+    .thanhtam-sale .img-banner:hover, .thanhtam-sale .img-banner:active {
+      box-shadow: 0px 0px 0px 5px #fff000; }
+  @media (min-width: 768px) {
+    .thanhtam-sale .img-banner .cap h3 {
+      font-size: 3.47rem;
+      white-space: nowrap; }
+    .thanhtam-sale .img-banner .cap p {
+      transform: translateY(-40%);
+      padding: 1rem 1.5rem;
+      font-size: 1.3rem; } }
+  @media (max-width: 767.98px) {
+    .thanhtam-sale .img-banner {
+      transition: none; }
+      .thanhtam-sale .img-banner:hover, .thanhtam-sale .img-banner:active {
+        box-shadow: 0px 0px 0px 5px #fff; } }
+
+.thanhtam-quote {
+  background: #000;
+  color: #fff; }
+  .thanhtam-quote figure {
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 3px #fff000; }
+    .thanhtam-quote figure img {
+      box-shadow: 0px 0px 0px 3px #fff;
+      width: 100%;
+      transition: .5s all ease-in-out; }
+  @media (max-width: 991.98px) {
+    .thanhtam-quote figure {
+      height: 100%; }
+      .thanhtam-quote figure img {
+        height: 100%;
+        width: 100%; } }
+  .thanhtam-quote .title h4 {
+    font-weight: 700;
+    background: #252525;
+    box-shadow: 0px 0px 0px 3px #fff000;
+    font-size: 1.71rem;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 999;
+    padding: 1rem;
+    white-space: nowrap; }
+  .thanhtam-quote .title p {
+    font-weight: 400;
+    box-shadow: 0px 0px 0px 3px #fff000;
+    font-size: 1.71rem;
+    padding: 4rem 2rem 2rem;
+    position: relative;
+    margin-bottom: 0; }
 
 .home-slider {
   background: #000;
@@ -6634,7 +6682,8 @@ footer .home-form {
       height: 1.79rem;
       width: 1.79rem; }
     .home-slider .owl-nav button:hover, .home-slider .owl-nav button:active {
-      background: #fff; }
+      background: #fff;
+      border: 0 0 0 0 red; }
 
 @media (max-width: 767.98px) {
   .home-slider {
@@ -6651,89 +6700,5 @@ footer .home-form {
         .home-slider .owl-nav button.owl-prev {
           left: 0;
           margin-right: .25rem; } }
-
-.home-new .item a {
-  text-decoration: none; }
-  .home-new .item a figure .blockimg {
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative; }
-    .home-new .item a figure .blockimg:before {
-      content: '';
-      display: block;
-      height: 0;
-      width: 0;
-      position: absolute;
-      border-color: rgba(0, 0, 0, 0.52);
-      border-style: solid;
-      margin-top: -105px;
-      margin-bottom: -105px;
-      margin-left: -175px;
-      margin-right: -175px;
-      padding: 105px 175px;
-      border-width: 105px 175px; }
-      @media (max-width: 1199.98px) {
-        .home-new .item a figure .blockimg:before {
-          margin-top: -87px;
-          margin-bottom: -87px;
-          margin-left: -145px;
-          margin-right: -145px;
-          padding: 87px 145px;
-          border-width: 87px 145px; } }
-      @media (max-width: 991.98px) {
-        .home-new .item a figure .blockimg:before {
-          margin-top: -63px;
-          margin-bottom: -63px;
-          margin-left: -105px;
-          margin-right: -105px;
-          padding: 63px 105px;
-          border-width: 63px 105px; } }
-      @media (max-width: 767.98px) {
-        .home-new .item a figure .blockimg:before {
-          border: 0px; } }
-    .home-new .item a figure .blockimg i {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      font-size: 3rem;
-      color: #fff;
-      transform: translateX(-50%) translateY(-50%);
-      opacity: 0;
-      transition: .5s all ease-in-out; }
-    .home-new .item a figure .blockimg img {
-      width: 100%; }
-  .home-new .item a figure figcaption h3 {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.2rem;
-    margin-top: .75rem;
-    margin-bottom: 0; }
-  .home-new .item a figure figcaption time {
-    color: #b3b3b3;
-    line-height: 1.2rem; }
-  .home-new .item a figure figcaption p {
-    line-height: 1.2rem;
-    height: 3.6rem;
-    overflow: hidden;
-    margin-top: .25rem;
-    color: #a6a6a6;
-    font-size: .9rem; }
-  @media (max-width: 767.98px) {
-    .home-new .item a figure {
-      padding-top: 20px; } }
-  .home-new .item a:hover .blockimg:before, .home-new .item a:active .blockimg:before {
-    margin: 0px;
-    padding: 0px;
-    transition: .3s all ease-in-out; }
-  .home-new .item a:hover .blockimg i, .home-new .item a:active .blockimg i {
-    opacity: 1;
-    z-index: 9999; }
-  @media (max-width: 767.98px) {
-    .home-new .item a:hover .blockimg i, .home-new .item a:active .blockimg i {
-      opacity: 0; } }
-  .home-new .item a:hover h3, .home-new .item a:active h3 {
-    color: #9644a2; }
-  .home-new .item a:hover p, .home-new .item a:active p {
-    color: #000; }
 
 /*# sourceMappingURL=main.css.map */

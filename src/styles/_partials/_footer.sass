@@ -1,104 +1,68 @@
 footer
-	.home-footer
+	.thanhtam-linkfooter
 		background: #373737
-		padding-top: 3.14rem
-		padding-bottom: 3.57rem
+		color: #afafaf
 		h3
 			color: yellow
-			font-weight: 900
-			font-size: 1.14rem
-			padding-bottom: .5rem
 		ul
-			font-size: 1.14rem
-			padding-left: 0
 			li
-				list-style: none
-				p
-					color: #afafaf
-					margin-bottom: 0
 				a
+					text-decoration: none
 					color: #afafaf
 					&:hover,
 					&:active
-						text-decoration: none
 						color: white
 		.icon
-			padding-top: 3rem
-			text-align: center
 			a
 				text-decoration: none
 				color: black
 				li
 					width: 2.79rem
 					height: 2.79rem
+					font-size: 1.2rem
 					line-height: 2.79rem
-					margin: 0 .36rem
+					margin: 0 .26rem
 					background: #afafaf
 					border-radius: 50%
 					&:hover
 						background: yellow
-
-	+media-breakpoint-down(sm)
-		.home-footer
-			text-align: center
-			padding-bottom: 2rem
+		+media-breakpoint-down(sm)
 			.icon
-				padding-top: 1rem
-
+				a
+					li
+						&:hover
+							background: #afafaf
 
 	.home-form
-		background: yellow
-		.row
-			display: flex
-			justify-content: space-between
-			padding: 2.71rem 0
-			margin: 0
-			h4
-				//margin: 0 9.21rem
-				//padding: 2.71rem  0
-				font-size: 1rem
-				color: black
-				width: 100%
-				margin-bottom: 0
-			.form-bot
+		background: #fff000
+		padding: 1rem 0
+		color: #000
+		.form-bot
+			background: #000
+			display: inline-block
+			padding: .3rem
+			//width: 320px
+			input
 				background: #000
-				position: relative
-				.form-group
-					//margin: 0 9.21rem
-					//padding: 2.71rem  0
-					//position: relative
-					margin-bottom: 0
-					max-width: 350px
-					input
-						font-style: italic
-						//height: 43px
-						padding: 1.6rem
-						background: #0000
-						border: #0000
-						color: #afafaf
-						border: none
-					&:hover,
-					&:active,
-					&:focus
-						border: none
-				button
-					position: absolute
-					right: 0
-					top: 50%
-					transform: translate(-50%,-50%)
-					border: none
-					//height: 37px
-					margin-right: -1.4rem
-					//width: 92px
-					padding: 0.5rem 1.64rem
-					background: #fff
-					a
-						color: black
-						font-size: 1.16rem
+				padding: 0 .5rem
+				color: #fff
+				border: none
+				font-size: 1.2rem
+				// width: 100%
+				&:focus, &:active
+					//outline: none
+			button
+				font-weight: bold
+				font-size: 1rem
+				line-height: 2rem
+				background: #fff
+				border: none
+				padding: 0 1rem
+				&:hover, &:active
+					background: yellow
 		+media-breakpoint-down(sm)
-			.row
-				h4
-					padding-bottom: 1rem
-				.form-bot
-					max-width: 350px
+			.form-bot
+				button
+					&:hover, &:active
+						background: #fff		
 
