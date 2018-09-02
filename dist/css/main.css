@@ -6548,6 +6548,8 @@ footer .home-form {
       color: #afafaf; }
     .thanhtam-product .item:hover a, .thanhtam-product .item:active a {
       text-decoration: none; }
+      .thanhtam-product .item:hover a .blockimg img, .thanhtam-product .item:active a .blockimg img {
+        filter: grayscale(0%); }
       .thanhtam-product .item:hover a .blockimg:before, .thanhtam-product .item:active a .blockimg:before {
         box-shadow: 0px 0px 0px 5px yellow inset; }
       .thanhtam-product .item:hover a figcaption h3, .thanhtam-product .item:active a figcaption h3 {
