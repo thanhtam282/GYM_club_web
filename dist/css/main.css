@@ -6391,6 +6391,8 @@ footer .home-form {
       color: #fff;
       border: none;
       font-size: 1.2rem; }
+      footer .home-form .form-bot input:focus, footer .home-form .form-bot input:active {
+        outline: black; }
     footer .home-form .form-bot button {
       font-weight: bold;
       font-size: 1rem;
