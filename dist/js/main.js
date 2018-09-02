@@ -80,33 +80,76 @@ $(document).ready(function () {
 			}
 		}
 	});
+
 	$('.thanhtam-banner a').each(function () {
 		var e = $(this).find('.btn-detail');
-		//$(this).find('.body').hide()
+		$(window).width(function () {
+			var width = $(window).width();
+			if (width > 900) {
+				$(e).on('mouseover', function () {
+					$(this).addClass("animated lightSpeedOut");
+					//$(this).addClass("animated infinite pulse")
+				}).on('mouseout', function () {
+					$(this).removeClass("animated lightSpeedOut");
+					$(this).addClass("animated lightSpeedIn");
+				});
+			} else {
+				$(e).on('mouseover', function () {
+					$(this).removeClass("animated");
+				});
+			}
+		});
 
-
-		$(e).on('mouseover', function () {
-			$(this).addClass("animated lightSpeedOut");
-			//$(this).removeClass("animated lightSpeedOut")
-			//$(this).parents('.item').find('.body').show()
-		}).on('mouseout', function () {
-			$(this).removeClass("animated lightSpeedOut");
-			$(this).addClass("animated lightSpeedIn");
-			//$(this).parents('.item').find('.body').show()
+		$(window).resize(function () {
+			var width = $(window).width();
+			if (width > 900) {
+				$(e).on('mouseover', function () {
+					$(this).addClass("animated lightSpeedOut");
+					//$(this).addClass("animated infinite pulse")
+				}).on('mouseout', function () {
+					$(this).removeClass("animated lightSpeedOut");
+					$(this).addClass("animated lightSpeedIn");
+				});
+			} else {
+				$(e).on('mouseover', function () {
+					$(this).removeClass("animated");
+				});
+				$(e).on('mouseout', function () {
+					$(this).removeClass("animated");
+				});
+			}
 		});
 	});
+
 	$('.thanhtam-quote figure').each(function () {
 		var f = $(this).find('img');
-		//$(this).find('.body').hide()
-
-
-		$(f).on('mouseover', function () {
-			$(this).addClass("animated infinite pulse");
-			//$(this).removeClass("animated lightSpeedOut")
-			//$(this).parents('.item').find('.body').show()
-		}).on('mouseout', function () {
-			$(this).removeClass("animated");
-			//$(this).parents('.item').find('.body').show()
+		$(window).width(function () {
+			var width = $(window).width();
+			if (width > 900) {
+				$(f).on('mouseover', function () {
+					$(this).addClass("animated infinite pulse");
+				}).on('mouseout', function () {
+					$(this).removeClass("animated");
+				});
+			} else {
+				$(f).on('mouseover', function () {
+					$(this).removeClass("animated");
+				});
+			}
+		});
+		$(window).resize(function () {
+			var width = $(window).width();
+			if (width > 900) {
+				$(f).on('mouseover', function () {
+					$(this).addClass("animated infinite pulse");
+				}).on('mouseout', function () {
+					$(this).removeClass("animated");
+				});
+			} else {
+				$(f).on('mouseover', function () {
+					$(this).removeClass("animated");
+				});
+			}
 		});
 	});
 });

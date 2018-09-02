@@ -1,23 +1,32 @@
 <!-- ////////////// HEADER ////////////// -->
 header.bg-light
 	.container
-		nav.navbar.navbar-expand-lg.navbar-light
+		nav.navbar.navbar-expand-lg.navbar-light.mb-2.mt-2
 			a.navbar-brand(href="#") 
-				img(src="./img/logo.png", alt="Logo")
-			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
+				img(src="./img/home_logo.png", alt="Logo")
+			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="true" aria-label="Search")
 				span.fa.fa-bars
 			#fullStackMenu.collapse.navbar-collapse
-				ul.navbar-nav.mr-auto
-					li.nav-item.active
-						a.nav-link(href="index.html")
-							| Trang chủ
+				ul.navbar-nav.ml-auto.navbar-right
 					li.nav-item
-						a.nav-link(href="about.html") Về chúng tôi
-					li.nav-item.dropdown
-						a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Gian hàng
-						.dropdown-menu(aria-labelledby="dropdownFS")
-							a.dropdown-item(href="#") Nam
-							a.dropdown-item(href="#") Nữ
-				form.form-inline.my-2.my-md-0
-					input.form-control(type="text" placeholder="Tìm kiếm" aria-label="Tìm kiếm")
+						a.nav-link(href="#") My account
+					li.nav-item
+						a.nav-link(href="#") Check Gift
+					li.nav-item
+						a.nav-link(href="#") My Card
+					li.nav-item
+						a.nav-link(href="#") Wishlist
+					li.nav-item
+						a.nav-link(href="#") The different
+					li.nav-item
+						a.nav-link(href="#") Career
+					li.nav-item
+						a.nav-link(href="#") Check Out
+					//- li.nav-item.dropdown
+					//- 	a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Gian hàng
+					//- 	.dropdown-menu(aria-labelledby="dropdownFS")
+					//- 		a.dropdown-item(href="#") Nam
+					//- 		a.dropdown-item(href="#") Nữ
+				//- form.form-inline.my-2.my-md-0
+				//- 	input.form-control(type="text" placeholder="Tìm kiếm" aria-label="Tìm kiếm")
 <!-- ////////////// HEADER ////////////// -->
